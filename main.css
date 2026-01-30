@@ -1,0 +1,52 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.block {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.30);
+}
+
+.Btn {
+    width: 100%;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.30);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    border-color: rgb(143, 143, 143);
+}
+
+
+.rotated-90 {
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: rgb(12, 12, 12);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.30);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin: 8px 0;
+    max-height: 0;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
